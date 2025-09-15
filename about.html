@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Pro Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/utasalogo.png" alt="index.html">
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#programs">Program</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#testimonials">Registration</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br><br><br><br>
+<div class="about-head">
+  <h1>About Us</h1>
+  <p>Discover our story, vision, and the team behind our success</p>
+  <button class="mode-toggle">🌙 Dark</button>
+</div>
+
+<section class="about-section">
+  <div class="about-block" data-animate="fade-left">
+    <div class="about-img"><img src="https://picsum.photos/600/400?random=1" alt="Story"></div>
+    <div class="about-text">
+      <h2>Our Story</h2>
+      <p>Started as a passionate group aiming to innovate and impact technology positively.</p>
+      <a href="#" class="btn-primary">Read More</a>
+    </div>
+  </div>
+  <div class="about-block reverse" data-animate="fade-right">
+    <div class="about-img"><img src="https://picsum.photos/600/400?random=2" alt="Vision"></div>
+    <div class="about-text">
+      <h2>Our Vision</h2>
+      <p>Creating sustainable solutions that empower communities worldwide.</p>
+      <a href="#" class="btn-primary">Read More</a>
+    </div>
+  </div>
+  <div class="about-block" data-animate="fade-left">
+    <div class="about-img"><img src="https://picsum.photos/600/400?random=3" alt="Team"></div>
+    <div class="about-text">
+      <h2>Our Team</h2>
+      <p>Diverse and talented team driving innovation and excellence daily.</p>
+      <a href="#" class="btn-primary">Read More</a>
+    </div>
+  </div>
+  <div class="about-block reverse" data-animate="fade-right">
+    <div class="about-img"><img src="https://picsum.photos/600/400?random=4" alt="Mission"></div>
+    <div class="about-text">
+      <h2>Our Mission</h2>
+      <p>To deliver value, empower communities and bridge technology gaps.</p>
+      <a href="#" class="btn-primary">Read More</a>
+    </div>
+  </div>
+  <div class="about-block" data-animate="fade-left">
+    <div class="about-img"><img src="https://picsum.photos/600/400?random=5" alt="Growth"></div>
+    <div class="about-text">
+      <h2>Our Growth</h2>
+      <p>Constantly evolving and expanding to meet the needs of a dynamic world.</p>
+      <a href="#" class="btn-primary">Read More</a>
+    </div>
+  </div>
+</section>
+
+<section class="timeline-section">
+  <h2 class="timeline-title">Our Journey</h2>
+  <div class="timeline">
+    <div class="timeline-item" data-animate="fade-up">
+      <div class="timeline-icon"><img src="https://picsum.photos/100?random=10" alt="Logo1"></div>
+      <div class="timeline-content"><h3>2015 - Founded</h3><p>Company started with a passionate team ready to innovate.</p></div>
+    </div>
+    <div class="timeline-item" data-animate="fade-left">
+      <div class="timeline-icon"><img src="https://picsum.photos/100?random=11" alt="Logo2"></div>
+      <div class="timeline-content"><h3>2016 - First Product</h3><p>Launched our first successful product gaining recognition.</p></div>
+    </div>
+    <div class="timeline-item" data-animate="fade-right">
+      <div class="timeline-icon"><img src="https://picsum.photos/100?random=12" alt="Logo3"></div>
+      <div class="timeline-content"><h3>2018 - Expansion</h3><p>Expanded to international markets and grew our team.</p></div>
+    </div>
+    <div class="timeline-item" data-animate="fade-left">
+      <div class="timeline-icon"><img src="https://picsum.photos/100?random=13" alt="Logo4"></div>
+      <div class="timeline-content"><h3>2020 - Innovation Award</h3><p>Received global recognition for our innovation and impact.</p></div>
+    </div>
+    <div class="timeline-item" data-animate="fade-right">
+      <div class="timeline-icon"><img src="https://picsum.photos/100?random=14" alt="Logo5"></div>
+      <div class="timeline-content"><h3>2023 - Today</h3><p>Continuing to grow, innovate, and make a positive difference globally.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="about-footer">
+  <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+</footer>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", ()=>{
+    const elements=document.querySelectorAll(".about-block,.timeline-item");
+    const revealOnScroll=()=>{elements.forEach(el=>{const rect=el.getBoundingClientRect();if(rect.top<window.innerHeight-100){el.classList.add("show");}})};
+    window.addEventListener("scroll",revealOnScroll);
+    revealOnScroll();
+
+    const toggleBtn=document.querySelector(".mode-toggle");
+    toggleBtn.addEventListener("click",()=>{document.body.classList.toggle("dark");toggleBtn.textContent=document.body.classList.contains("dark")?"☀️ Light":"🌙 Dark";});
+  });
+  </script>
+</body>
+</html>
