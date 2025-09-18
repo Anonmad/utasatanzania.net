@@ -17,25 +17,6 @@
                 header.style.padding = "1rem 0";
             }
         });
-        
-        // Simple form validation
-        const contactForm = document.querySelector('.contact-form form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Asante kwa ujumbe wako! Tutawasiliana nawe hivi karibuni.');
-                this.reset();
-            });
-        }
-        
-        const newsletterForm = document.querySelector('.newsletter-form');
-        if (newsletterForm) {
-            newsletterForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Asante kwa kujiandikisha kwa newsletter yetu!');
-                this.reset();
-            });
-        }
 
 const slides = document.querySelectorAll('.slide');
   let current = 0;
