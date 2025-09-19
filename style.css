@@ -22,7 +22,7 @@
         }
         
         .container {
-            padding: 0 20px;
+            padding: 0 10px;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -460,12 +460,12 @@
             .about-image {
                 order: -1;
             }
-            
+        }
+        @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
                 align-items: flex-start;
                 text-align: center;
-                gap: 1rem;
             }
             
             .about-content {
