@@ -86,7 +86,6 @@
             color: white;
             font-size: 1.5rem;
             cursor: pointer;
-            position: fixed;
         }
 
       /* ===== HERO SECTION ===== */
@@ -451,6 +450,21 @@
             color: var(--bork);
             width: 20px;
             text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
         }
         /* Responsive Design */
         @media (max-width: 992px) {
