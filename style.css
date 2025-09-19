@@ -90,7 +90,7 @@
 /* ==== FIXES ZA MOBILE VIEW ==== */
 
 /* Zuia kitu chochote kisitoke nje ya screen */
-img, iframe, video {
+img, video {
   max-width: 100%;
   height: auto;
   display: block;
