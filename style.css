@@ -87,6 +87,69 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
+/* ==== FIXES ZA MOBILE VIEW ==== */
+
+/* Zuia kitu chochote kisitoke nje ya screen */
+img, iframe, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Rekebisha header kwenye simu */
+header {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.logo img {
+  height: 100px; /* badala ya 120px kwenye simu */
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+
+  nav {
+    width: 100%;
+    background: #0a0a0a;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px;
+  }
+}
+
+/* Zuia map kuvuja kulia */
+.map iframe {
+  width: 100% !important;
+  max-width: 100%;
+  border: 0;
+  display: block;
+}
 
       /* ===== HERO SECTION ===== */
         /* Hero Section */
@@ -452,20 +515,6 @@
             text-align: center;
         }
 
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 0.8rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        
-        .contact-form textarea {
-            height: 150px;
-            resize: vertical;
-        }
         /* Responsive Design */
         @media (max-width: 992px) {
             .about-content {
