@@ -99,7 +99,6 @@ img, video {
 header {
   width: 100%;
   overflow-x: hidden;
-    align-items: center;
 }
 
 .logo img {
@@ -581,7 +580,6 @@ header {
   color: #f1f1f1;
   padding: 60px 20px 20px;
   font-family: 'Poppins', sans-serif;
-    align-items: center;
 }
         /* Footer */
 .footer-container {
