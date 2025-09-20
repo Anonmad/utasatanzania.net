@@ -94,6 +94,7 @@ img, video {
   max-width: 100%;
   height: auto;
   display: block;
+    align-items: center;
 }
 
 /* Rekebisha header kwenye simu */
@@ -103,7 +104,7 @@ header {
 }
 
 .logo img {
-  height: 100px; /* badala ya 120px kwenye simu */
+  height: 120px; /* badala ya 120px kwenye simu */
   max-width: 100%;
 }
 
@@ -587,6 +588,7 @@ header {
   color: #f1f1f1;
   padding: 60px 20px 20px;
   font-family: 'Poppins', sans-serif;
+    align-items: center;
 }
         /* Footer */
 .footer-container {
@@ -595,7 +597,7 @@ header {
   gap: 30px;
   max-width: 1200px;
   margin: auto;
-    justify-content: center;
+    align-items: center;
 }
 
 .footer-col h4 {
