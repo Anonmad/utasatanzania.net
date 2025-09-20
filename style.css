@@ -93,6 +93,7 @@
 img, video {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* Rekebisha header kwenye simu */
@@ -141,7 +142,6 @@ header {
     padding: 10px;
   }
 }
-
 
       /* ===== HERO SECTION ===== */
         /* Hero Section */
@@ -588,7 +588,6 @@ header {
   gap: 30px;
   max-width: 1200px;
   margin: auto;
-    align-items: center;
 }
 
 .footer-col h4 {
