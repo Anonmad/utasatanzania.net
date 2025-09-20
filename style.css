@@ -103,7 +103,7 @@ header {
 }
 
 .logo img {
-  height: 60px; /* badala ya 120px kwenye simu */
+  height: 100px; /* badala ya 120px kwenye simu */
   max-width: 100%;
 }
 
@@ -116,7 +116,7 @@ header {
   }
 
   .logo img {
-    height: 50px;
+    height: 120px;
   }
 
   nav {
@@ -595,6 +595,7 @@ header {
   gap: 30px;
   max-width: 1200px;
   margin: auto;
+    justify-content: center;
 }
 
 .footer-col h4 {
