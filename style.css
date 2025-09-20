@@ -591,8 +591,6 @@ header {
   color: #f1f1f1;
   padding: 60px 20px 20px;
   font-family: 'Poppins', sans-serif;
-    align-items: center;
-    flex-direction: column;
 }
         /* Footer */
 .footer-container {
@@ -601,8 +599,11 @@ header {
   gap: 30px;
   max-width: 1200px;
   margin: auto;
-    align-items: center;
     flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .footer-col h4 {
@@ -618,7 +619,7 @@ header {
   height: 2px;
   background: #ff4757;
   position: absolute;
-  left: 0;
+  left: 41%;
   bottom: -6px;
 }
 
@@ -645,6 +646,8 @@ header {
 .footer-logo {
   max-width: 120px;
   margin-bottom: 15px;
+    display: block;
+    margin: auto;
 }
 
 .footer p {
